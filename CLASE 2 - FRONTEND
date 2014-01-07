@@ -1,0 +1,54 @@
+CLASE 2 - FRONTEND
+
+CAJAS
+FLOAT
+
+CAJAS
+-----
+
+En css todo elemento tiende a ser una caja. Es un elemento que se le puede colocar un width y un high. Cuando colocamos un ancho y un algo igual no se le puede colocar nada enfrente. Las cajas siempre ocupan el max. margen. PUeden tener márgenes up and down y se puede jugar con esto. Dp está el texto <p> los textosy las imágenes son inline, es decir tios de objeto en la misma linea y que no tienen margen, si agarro la cja y le pongo display:inline-block, ya tengo una caja, puedo manejar los márgenes y NO ocupa el 100%, como ocurre si es block. así puedo tener imágenes cerca ( ej se usa para varios article cercanos ), por DEFECTO: block ( excepto p..., a...). ARTICLE: mejor inline block, pero depende del diseño.
+
+FLOAT
+-----
+
+Funciona para block, inline block o inline, pero funcionan de manera diferente. 
+
+Texto, float: rodea y abraza una imagen. ej: caja que floto a la izda, el texto la "abraza" por la derecha. Los floats es lo correcto si queremos enviar algo a un lado y queremos que un texto lo "abrace" por el lado contrario.
+
+POSITION
+--------
+
+STATIC: estilo x defecto. Me meto en un contenedor y si incluyo otra caja, la caja va debajo.
+
+RELATIVE: ( si lo añado ) añado 4 nuevos elementos: top botton left y right, el punto 0.0 será el contenedor ( no el navegador ni body ) baja y sube segun ese "top" o "left" y también la caja que está debajo. Si queremos manejar z-index, debemos por lo menos definir la caja como RELATIVE.
+
+ABSOLUTE: la caja se pega a la esquina superior derecha del BODY ignorando el contenedor. ROMPE el orden y la posiciòn. El problema es que no siempre quiero posicionarlo frente a BODY sino frente al CONTENEDOR. pero existe una manera de hacerlo: usar relative y absolute:
+
+	- Contenedor: RELATIVE
+	- Contenido: ABSOLUTE
+
+Absolute va a BUSCAR UN ELEMENTO CON POSITION RELATIVE ( o absolute ) y se alineará con él, NO CON BODY.
+
+Esto es MUY MUY IMPORTANTE!
+
+FIXED: deja fijo un objeto en una posición, es como una nueva capa y siempre permanece fijo, sin moverse. Se puede usar si vale la pena.
+
+OVERFLOW HIDDEN: los elementos que exceden de una caja, dejan de verse. otra opción es usar un clear: both, pero con atención.
+
+Los objetos que son bloque de TEXTO tienen un margen por DEFECTO, solución: margin 0 al contenedor
+
+las clases UL por defecto tienen un PADDIN LEFT
+
+Las IMÁGENES por defecto tienen una ALINEACIÓN del BASE LINE, ed, de la raya donde está lo último del texto. se recomienda: vertical-align top
+
+TODAS LAS ETIQUETAS P TIENEN UN MARGEN DE 1EM
+
+usar ICONS BASADOS EN FUENTES: Icomoons
+
+Convertidor de fuentes: Fontsquarrel
+
+Con textos, tener siempre en cuenta el vertical align.
+
+
+
+
